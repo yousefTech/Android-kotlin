@@ -1,9 +1,10 @@
 package calculator
 
 fun main(){
+    //Declaration phase 
     var number = (0..10).random()
     var guess :Int;var counter = 1
-
+    //Process Pahse 
     println("Lets play guess the Number")
     print("I am ready, ")
     println("What's  Your guess")
@@ -19,5 +20,6 @@ fun main(){
            counter++
         }
     }while (number!=guess)
+    //Display the counter after guessing
     println("You got it in $counter")
 }
